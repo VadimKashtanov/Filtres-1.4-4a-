@@ -1,0 +1,25 @@
+nature[2] CHIFFRE {cible}
+l = (1,8,32,128)
+s=[]
+for i in l:
+    for j in (1,):
+        if 128 >= i*j >= 1:
+            s += [{
+                'K':i,
+                'interv':i*j
+            }]
+for i in s: print(i)
+
+{'K': 1, 'interv': 1}
+{'K': 8, 'interv': 8}
+{'K': 32, 'interv': 32}
+{'K': 128, 'interv': 128}
+
+pour (haut, bas) uniquement avec
+
+1.000, 10.000
+
+len(s)*2*(2) = 16
+
+
+il faut 128 bloques 
